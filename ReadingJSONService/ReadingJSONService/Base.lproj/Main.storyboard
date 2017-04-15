@@ -147,13 +147,13 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KtC-mJ-Qx3">
-                                            <rect key="frame" x="8" y="229" width="64" height="22"/>
+                                            <rect key="frame" x="274" y="228" width="64" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="POSTS">
                                                 <color key="titleColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                             </state>
                                             <connections>
-                                                <action selector="btnPostsPressed" destination="sHa-Su-2DB" eventType="touchUpInside" id="e5N-nd-XFy"/>
+                                                <action selector="btnGetPosts" destination="w09-Qx-xaH" eventType="touchUpInside" id="SHW-2s-e3p"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -176,6 +176,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eL-ff-LGU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2480.8000000000002" y="55.322338830584712"/>
+        </scene>
+        <!--User Posts Table View Controller-->
+        <scene sceneID="zJS-aO-C7I">
+            <objects>
+                <tableViewController storyboardIdentifier="UserPost" id="cTC-Xe-7G8" customClass="UserPostsTableViewController" customModule="ReadingJSONService" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="MTc-pY-JQm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PostCell" textLabel="Oub-Ac-H4b" detailTextLabel="9eT-5V-coh" style="IBUITableViewCellStyleSubtitle" id="XF9-SW-bW3">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XF9-SW-bW3" id="HKj-eb-VXa">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Oub-Ac-H4b">
+                                            <rect key="frame" x="15" y="4" width="34" height="21"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9eT-5V-coh">
+                                            <rect key="frame" x="15" y="25" width="44" height="15"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="cTC-Xe-7G8" id="lGf-sj-tgB"/>
+                            <outlet property="delegate" destination="cTC-Xe-7G8" id="VqN-px-zOj"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <outlet property="tblPost" destination="MTc-pY-JQm" id="aiQ-Kk-vQp"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FBj-d9-UZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3268" y="55"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="DYy-PY-vgK">

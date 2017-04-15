@@ -13,6 +13,7 @@
 		4B1045361E9E8EA100AD7536 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4B1045341E9E8EA100AD7536 /* LaunchScreen.storyboard */; };
 		4B14FDB71EA11F5500BAEFE3 /* UserPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14FDB61EA11F5500BAEFE3 /* UserPost.swift */; };
 		4B14FDB91EA1219C00BAEFE3 /* UserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B14FDB81EA1219C00BAEFE3 /* UserTableViewController.swift */; };
+		4B1A5ECF1EA2C1F2002D068F /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B1A5ECE1EA2C1F2002D068F /* Comment.swift */; };
 		4B5B99F31EA248C50019DFA8 /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B99F21EA248C50019DFA8 /* UserDetailTableViewCell.swift */; };
 		4B5B99F51EA248E70019DFA8 /* UserDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B99F41EA248E70019DFA8 /* UserDetailTableViewController.swift */; };
 		4B61CD591EA231530045BA5D /* UserPostsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B61CD581EA231530045BA5D /* UserPostsTableViewController.swift */; };
@@ -31,6 +32,7 @@
 		4B1045371E9E8EA100AD7536 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B14FDB61EA11F5500BAEFE3 /* UserPost.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPost.swift; sourceTree = "<group>"; };
 		4B14FDB81EA1219C00BAEFE3 /* UserTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserTableViewController.swift; sourceTree = "<group>"; };
+		4B1A5ECE1EA2C1F2002D068F /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		4B5B99F21EA248C50019DFA8 /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		4B5B99F41EA248E70019DFA8 /* UserDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewController.swift; sourceTree = "<group>"; };
 		4B61CD581EA231530045BA5D /* UserPostsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserPostsTableViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 				4BB4F1FA1E9FD2DD00248A10 /* Address.swift */,
 				4BB4F1FC1E9FD39800248A10 /* User.swift */,
 				4B14FDB61EA11F5500BAEFE3 /* UserPost.swift */,
+				4B1A5ECE1EA2C1F2002D068F /* Comment.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 				4B5B99F31EA248C50019DFA8 /* UserDetailTableViewCell.swift in Sources */,
 				4B5B99F51EA248E70019DFA8 /* UserDetailTableViewController.swift in Sources */,
 				4B14FDB91EA1219C00BAEFE3 /* UserTableViewController.swift in Sources */,
+				4B1A5ECF1EA2C1F2002D068F /* Comment.swift in Sources */,
 				4BB4F1F91E9FD24900248A10 /* Company.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

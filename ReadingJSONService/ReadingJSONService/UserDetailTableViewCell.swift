@@ -9,9 +9,6 @@
 import UIKit
 
 
-protocol UserDetailTableViewCellDelegate{
-    func getUserPosts(indexPath:IndexPath)
-}
 class UserDetailTableViewCell: UITableViewCell {
 
     @IBOutlet weak var lblUserId: UILabel!
@@ -19,14 +16,5 @@ class UserDetailTableViewCell: UITableViewCell {
     @IBOutlet weak var lblUserMail: UILabel!
     @IBOutlet weak var lblCompany: UILabel!
     @IBOutlet weak var lblCity: UILabel!
-    
-    var delegate:UserDetailTableViewCellDelegate?
-    
-    var indexPath:IndexPath?
-    
-    
-    @IBAction func btnPostsPressed() {
-        delegate?.getUserPosts(indexPath: self.indexPath!)
-    }
     
 }

@@ -8,19 +8,15 @@
 
 import UIKit
 
-class UserDetailTableViewController: UITableViewController, UserDetailTableViewCellDelegate {
+class UserDetailTableViewController: UITableViewController {
     
     var selectedUser:User!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = selectedUser.username
     }
     
-    func getUserPosts(indexPath: IndexPath) {
-        //post butonuna userId yi alıp /posts?userId=\(user.userId) şeklinde gönderi yapılacak. xib leriyle sonra uğraşırız artık. ee önümüz referandum.
-    }
-    
-    override func numberOfSections(in tableView: UITableView) -> Int {
+        override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return 1
     }
@@ -43,4 +39,13 @@ class UserDetailTableViewController: UITableViewController, UserDetailTableViewC
         return cell
     }
     
+    
+    
+    @IBAction func btnGetPosts() {
+        let myVC = storyboard?.instantiateViewController(withIdentifier: "UserPost") as! UserPostsTableViewController
+
+        myVC.selectedUser = selectedUser
+        
+        self.navigationController?.pushViewController(myVC, animated: true)
+    }    
 }

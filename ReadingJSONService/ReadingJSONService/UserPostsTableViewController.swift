@@ -21,9 +21,9 @@ class UserPostsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "\(selectedUser.id)'s Posts"
-        
-        Alamofire.request("https://jsonplaceholder.typicode.com/posts?userId=\(selectedUser.id)").responseJSON { response in
+        self.title = "\(selectedUser.name)'s Posts"
+        let id = String(selectedUser.id)
+        Alamofire.request("https://jsonplaceholder.typicode.com/posts?userId=\(id)").responseJSON { response in
             
             switch response.result {
                 

@@ -78,7 +78,7 @@ class UserTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let userDetailTableViewController = segue.destination as! UserDetailTableViewController
         
-        userDetailTableViewController.selectedUser = allUsers[tableView.indexPathForSelectedRow!.row]//hangi yazar seçildiyse onu bul
+        userDetailTableViewController.selectedUser = allUsers[tableView.indexPathForSelectedRow!.row]
         
     }
     
